@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContTech - Lucro MEI</title>
+<style>
+body{font-family:Arial;max-width:500px;margin:40px auto;padding:20px;background:#f5f7ff}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+input{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc}
+button{width:100%;padding:12px;background:#0d6efd;color:white;border:none;border-radius:8px;font-weight:bold}
+.result{margin-top:16px;padding:12px;background:#e8f5e9;border-radius:8px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>💰 Calculadora de Lucro MEI</h2>
+<p>ContTech - Projeto ADS Cruzeiro do Sul</p>
+<label>Receita do mês (R$)</label>
+<input type="number" id="receita" placeholder="Ex: 5000">
+<label>Despesas do mês (R$)</label>
+<input type="number" id="despesa" placeholder="Ex: 2000">
+<button onclick="calcular()">Calcular Lucro</button>
+<div id="res" class="result">Seu lucro aparecerá aqui</div>
+</div>
+<script>
+function calcular(){
+let r = parseFloat(document.getElementById('receita').value)||0
+let d = parseFloat(document.getElementById('despesa').value)||0
+let lucro = r - d
+let margem = r>0 ? (lucro/r*100).toFixed(1) : 0
+document.getElementById('res').innerHTML = `Lucro: R$ ${lucro.toFixed(2)} <br> Margem: ${margem}%`
+}
+</script>
+</body>
+</html>
