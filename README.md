@@ -38,7 +38,7 @@ Como Bacharela em Ciências Contábeis, separei despesas fixas (aluguel, DAS) de
 
 - LinkedIn: https://www.linkedin.com/in/angelaS2barbosa
 - Área: ContTech - Contabilidade + Tecnologia para MEIs
-- Local: São Paulo - SP
+- Local: Formosa - GO
 
 ### 🚀 Como usar
 1. Informe receita do mês
